@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="../folder.png" type="image/png">
+  <title>Edit a Text File</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    form {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 400px;
+      margin: 50px auto;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: none;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #657585;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #788a9a;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<form action="commit-file" method="post">
+  <h2>Edit a Text File</h2>
+  <label for="content">Content:</label>
+  <input id="filename" type="hidden" name="file-name" value="">
+  <textarea id="content" name="content" rows="10" ></textarea> <br><br/>
+  <input type="submit" value="Save">
+</form>
+</body>
+</html>
